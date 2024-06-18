@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Thebe Wolk Chat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+ 
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        color: #000;
+        background-color: #FFF;
+        font-family: Arial, sans-serif;
+      }
+
+      a {
+    color: #000000;
+    text-decoration: underline;
+}
+ 
+      .center-div {
+        width: 50vw;
+        height: 80vh;
+        background-color: #E2E0EC;
+        border-radius: 15px;
+        padding: 10px;
+        box-sizing: border-box;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+ 
+      @media only screen and (max-width: 600px) {
+        .center-div {
+          height: 100vh;
+          width: 100vw;
+          background-color: #F1F1F1;
+          border-radius: 15px;
+          padding: 5px;
+          box-sizing: border-box;
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+ 
+  <body>
+    <div>
+      <div class="absolute inset-4 ">
+        <div
+          class="center-div relative h-full w-full overflow-clip rounded-md border border-zinc-200 bg-white p-2 px-0 py-0"
+        >
+          <iframe
+            style="border: none;"
+            srcdoc="<body><script src='https://cdn.botpress.cloud/webchat/v0/inject.js'></script>
+            <script>
+              window.botpressWebChat.init({
+                  'composerPlaceholder': 'Stel je vraag',
+                  'botConversationDescription': 'Praat met de Wolk handleiding',
+                  'botName': 'Wolk chat (beta)',
+                  'botId': '40291612-49a3-49f3-a72f-adbec475c3cb',
+                  'hostUrl': 'https://cdn.botpress.cloud/webchat/v0',
+                  'messagingUrl': 'https://messaging.botpress.cloud',
+                  'clientId': '40291612-49a3-49f3-a72f-adbec475c3cb',
+                  'enableConversationDeletion': true,
+                  'showPoweredBy': false,
+                  'className': 'webchatIframe',
+                  'containerWidth': '100%25',
+                  'layoutWidth': '100%25',
+                  'hideWidget': true,
+                  'showCloseButton': false,
+                  'disableAnimations': true,
+                  'closeOnEscape': false,
+                  'useSessionStorage': true,
+                  'showConversationsButton': false,
+                  'enableTranscriptDownload': false,
+                  'stylesheet':'https://webchat-styler-css.botpress.app/prod/code/bc361ef0-1e1a-4462-a177-6d0863c0bcd4/v42411/style.css'
+                  
+              });
+            window.botpressWebChat.onEvent(function () { window.botpressWebChat.sendEvent({ type: 'show' }) }, ['LIFECYCLE.LOADED']);
+            </script></body>"
+            width="100%"
+            height="100%"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
