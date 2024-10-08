@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TGG35PRG');</script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>U-Pas | Prototype gebruikerstest</title>
@@ -53,64 +60,14 @@
     </style>
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TGG35PRG"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <img src="img/desktop_image.png" alt="Full Width Image for Desktop" class="full-width-image full-width-image-desktop">
     <img src="img/tablet_image.png" alt="Full Width Image for Tablet" class="full-width-image full-width-image-tablet">
     <img src="img/mobile_image.png" alt="Full Width Image for Mobile" class="full-width-image full-width-image-mobile">
 
-    <script>
-        !function(e,t,a){var c=e.head||e.getElementsByTagName("head")[0],n=e.createElement("script");n.async=!0,n.defer=!0, n.type="text/javascript",n.src=t+"/static/js/widget.js?config="+JSON.stringify(a),c.appendChild(n)}(document,"https://app.engati.com",{bot_key:"1541dc8dca9f419d",welcome_msg:true,branding_key:"default",server:"https://app.engati.com",e:"p" });
-
-        function applyEngatiStyles() {
-            const customCSS = `
-                #engtCalloutText {
-                    border-radius: 16px 16px 0px 16px;
-                    border: 1px solid #CBD5E1;
-                    background: #FFF;
-                    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.12);
-                }
-
-                @media (min-width: 767px) {
-                    .engt-pages {
-                        border-radius: 16px;
-                        border: 1px solid #CBD5E1;
-                        box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.12);
-                    }
-                }
-
-                a, .engt .engt-popover-preview-content {
-    color: #000 !important;
-}
-
-                li#CLEAR_CHAT_HISTORY span, li#CHAT_SETTINGS span {
-                    display: none;
-                }
-
-                li#CLEAR_CHAT_HISTORY:after {
-                    content: 'Gesprek verwijderen';
-                    margin-right: 8px;
-                }
-
-                li#CHAT_SETTINGS:after {
-                    content: 'Instellingen';
-                    margin-right: 8px;
-                }
-            `;
-
-            const styleElement = document.createElement('style');
-            styleElement.textContent = customCSS;
-            document.head.appendChild(styleElement);
-        }
-
-        function waitForEngatiWidget() {
-            const checkInterval = setInterval(() => {
-                if (document.querySelector('.engt-wrapper')) {
-                    clearInterval(checkInterval);
-                    applyEngatiStyles();
-                }
-            }, 100);
-        }
-
-        waitForEngatiWidget();
-    </script>
+   
 </body>
 </html>
